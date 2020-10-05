@@ -441,6 +441,24 @@
                 <version>${carbon.identity.framework.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.identity.fetch.remote</groupId>
+                <artifactId>org.wso2.carbon.identity.remotefetch.core</artifactId>
+                <version>${org.wso2.carbon.identity.remotefetch.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.identity.fetch.remote</groupId>
+                <artifactId>org.wso2.carbon.identity.remotefetch.common</artifactId>
+                <version>${org.wso2.carbon.identity.remotefetch.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.identity.server.api</groupId>
+                <artifactId>org.wso2.carbon.identity.api.server.fetch.remote.common</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
