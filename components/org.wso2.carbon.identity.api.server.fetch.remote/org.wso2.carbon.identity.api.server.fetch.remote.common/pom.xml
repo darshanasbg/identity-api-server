@@ -23,13 +23,12 @@
     <parent>
         <groupId>org.wso2.carbon.identity.server.api</groupId>
         <artifactId>org.wso2.carbon.identity.api.server.fetch.remote</artifactId>
-        <version>1.0.159-SNAPSHOT</version>
+        <version>1.0.166-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.wso2.carbon.identity.api.server.fetch.remote.common</artifactId>
     <packaging>jar</packaging>
-
 
     <dependencies>
         <dependency>
@@ -48,6 +47,5 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
 
 </project>
