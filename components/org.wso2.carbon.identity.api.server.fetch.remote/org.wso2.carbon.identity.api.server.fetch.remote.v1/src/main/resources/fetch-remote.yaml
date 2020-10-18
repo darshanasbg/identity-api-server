@@ -647,7 +647,7 @@ components:
         accessToken:
           type: string
           example: sample access token
-        userName:
+        username:
           type: string
           example: Jhon Doe
         uri:

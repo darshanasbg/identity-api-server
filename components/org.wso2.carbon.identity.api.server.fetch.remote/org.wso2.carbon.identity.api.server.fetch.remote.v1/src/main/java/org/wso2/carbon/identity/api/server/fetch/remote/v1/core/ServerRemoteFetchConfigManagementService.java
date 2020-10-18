@@ -473,8 +473,8 @@ public class ServerRemoteFetchConfigManagementService {
             if (!StringUtils.isEmpty(repositoryManagerAttributes.getUri())) {
                 properties.put(URI, repositoryManagerAttributes.getUri());
             }
-            if (!StringUtils.isEmpty(repositoryManagerAttributes.getUserName())) {
-                properties.put(RemoteFetchConfigurationConstants.USER_NAME, repositoryManagerAttributes.getUserName());
+            if (!StringUtils.isEmpty(repositoryManagerAttributes.getUsername())) {
+                properties.put(RemoteFetchConfigurationConstants.USER_NAME, repositoryManagerAttributes.getUsername());
             }
         }
 
@@ -570,7 +570,7 @@ public class ServerRemoteFetchConfigManagementService {
 
         setIfNotNull(remoteFetchConfiguration
                         .getRepositoryManagerAttributes().get(RemoteFetchConfigurationConstants.USER_NAME),
-                repositoryManagerAttributes::setUserName);
+                repositoryManagerAttributes::setUsername);
         return repositoryManagerAttributes;
 
     }

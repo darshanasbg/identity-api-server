@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.*;
 public class RepositoryManagerAttributes  {
   
     private String accessToken;
-    private String userName;
+    private String username;
     private String uri;
     private String branch;
     private String directory;
@@ -56,20 +56,20 @@ public class RepositoryManagerAttributes  {
 
     /**
     **/
-    public RepositoryManagerAttributes userName(String userName) {
+    public RepositoryManagerAttributes username(String username) {
 
-        this.userName = userName;
+        this.username = username;
         return this;
     }
     
     @ApiModelProperty(example = "Jhon Doe", value = "")
-    @JsonProperty("userName")
+    @JsonProperty("username")
     @Valid
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /**
@@ -139,7 +139,7 @@ public class RepositoryManagerAttributes  {
         }
         RepositoryManagerAttributes repositoryManagerAttributes = (RepositoryManagerAttributes) o;
         return Objects.equals(this.accessToken, repositoryManagerAttributes.accessToken) &&
-            Objects.equals(this.userName, repositoryManagerAttributes.userName) &&
+            Objects.equals(this.username, repositoryManagerAttributes.username) &&
             Objects.equals(this.uri, repositoryManagerAttributes.uri) &&
             Objects.equals(this.branch, repositoryManagerAttributes.branch) &&
             Objects.equals(this.directory, repositoryManagerAttributes.directory);
@@ -147,7 +147,7 @@ public class RepositoryManagerAttributes  {
 
     @Override
     public int hashCode() {
-        return Objects.hash(accessToken, userName, uri, branch, directory);
+        return Objects.hash(accessToken, username, uri, branch, directory);
     }
 
     @Override
@@ -157,7 +157,7 @@ public class RepositoryManagerAttributes  {
         sb.append("class RepositoryManagerAttributes {\n");
         
         sb.append("    accessToken: ").append(toIndentedString(accessToken)).append("\n");
-        sb.append("    userName: ").append(toIndentedString(userName)).append("\n");
+        sb.append("    username: ").append(toIndentedString(username)).append("\n");
         sb.append("    uri: ").append(toIndentedString(uri)).append("\n");
         sb.append("    branch: ").append(toIndentedString(branch)).append("\n");
         sb.append("    directory: ").append(toIndentedString(directory)).append("\n");
